@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alert</title>
+    <style>
+        .alert-box{
+            background: #e4e4e4;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="alert-box" id="alert">
+    <p>Alert box</p>
+    <button id="close">닫기</button>
+</div>
+<button id="open">버튼</button>
+<script>
+    // function openalert(){
+    //     document.getElementById('alert').style.display='block';
+    // }
+    // function closealert(){
+    //     document.getElementById('alert').style.display='none';
+    // }
+
+    document.getElementById('close').addEventListener('click',function(){
+        document.getElementById('alert').style.display='none';
+    });
+    document.getElementById('open').addEventListener('click',function(){
+        document.getElementById('alert').style.display='block';
+    });
+</script>
+</body>
+</html>
